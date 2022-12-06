@@ -9,11 +9,12 @@ const Header = () => {
   return (
     <>
       <Head />
-        <nav className='bg-[var(--color-bg-transparent)] h-12 flex w-full px-6  sm:px-16  lg:px-36 xl:px-48  justify-between items-center navbar z-20'>
+        <nav className='bg-[var(--color-bg-transparent)] h-12 flex w-full px-6  sm:px-16  lg:px-36 xl:px-48  justify-between items-center navbar z-20 '>
 
           <h2 className="">Goschool</h2>
-          <ul className= { click ? "mobile-nav" : " list-none md:flex hidden justify-end"} onClick={() => setClick(false)}>
-            <li>
+          <ul className= { click ? "absolute top-24 left-0 bg-[var(--color-primary)] text-[var(--color-white)] w-[100vw] flex justify-center  text-center md:hidden py-6 leading-8" : "md:flex hidden justify-end"} onClick={() => setClick(false)}>
+            <div className="md:flex">
+              <li>
               <Link class to='/'>Home</Link>
             </li>
             <li>
@@ -34,6 +35,8 @@ const Header = () => {
             <li>
               <Link to='/contact'>Contact</Link>
             </li>
+            </div>
+            
           </ul>
 
           <div className="flex items-center ">

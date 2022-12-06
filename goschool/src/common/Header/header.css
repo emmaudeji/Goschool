@@ -31,6 +31,7 @@ header .nav {
 nav li {
   margin-right: 10px;
   font-size: small;
+  
 }
 
 /* header ul {
@@ -91,9 +92,12 @@ header ul li a:hover {
 
   .mobile-nav {
     position: absolute;
-    top: 7vh;
+    top: 14vh;
     left: 0;
     width: 100%;
     background-color: var(--color-primary);;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 }
