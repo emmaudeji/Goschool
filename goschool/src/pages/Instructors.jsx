@@ -1,13 +1,15 @@
 import {Hero} from '../components'
-import bg3 from '../assets/bgwhite2.jpg'
+import bg3 from '../assets/team1.jpg'
 
-const Courses = () => {
+const Instructors = () => {
   return (
     <Hero
+    title="Instructors"
     backgroundImage={bg3}
-    header={'Over 10,000 courses curated to meet your career goals'}
+    header={'Learn from the best and master your skill'}
     text={<>
-            <p>Search for the course that meets your need and start learning today.</p>
+            <p>Over 100 certified tutors in different field.</p>
+            <p>Find out our range of professional tutors and start learning today.</p>
           </>}
     CTA={
       <div className='mt-4'>
@@ -17,9 +19,10 @@ const Courses = () => {
               <button className='bg-[var(--color-white)] text-[var(--color-black)] px-[18px] py-[14px] mr-[20px] rounded hover:bg-[var(--color-secondary)] hover:text-[var(--color-white)] duration-500 cursor-pointer'>
                 View Courses <i className='fa fa-long-arrow-alt-right'></i>
               </button>
-      </div>}
-      />
+      </div>
+    }
+    />
   )
 }
 
-export default Courses
+export default Instructors

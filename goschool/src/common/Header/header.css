@@ -90,7 +90,7 @@ header ul li a:hover {
     top: -20px;
   }
 
-  .mobile-nav {
+  /* .mobile-nav {
     position: absolute;
     top: 14vh;
     left: 0;
@@ -99,5 +99,6 @@ header ul li a:hover {
     display: flex;
     flex-direction: column;
     justify-content: center;
-  }
+
+  } */
 }

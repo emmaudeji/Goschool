@@ -215,9 +215,9 @@ p {
 
 /* ======= Hero =========== */
 .hero {
-  background-image: url("./assets/bg3.png");
-  background-size: cover;
-  background-attachment: fixed;
+  
+  /* background-size: cover; */
+  /* background-attachment: fixed; */
   position: absolute;
   top: 0;
   left: 0;

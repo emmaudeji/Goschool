@@ -1,25 +1,27 @@
 import {Hero} from '../components'
-import bg3 from '../assets/bgwhite2.jpg'
+import bg3 from '../assets/bg3.png'
 
-const Courses = () => {
+const Pricing = () => {
   return (
-    <Hero
+     <Hero
     backgroundImage={bg3}
-    header={'Over 10,000 courses curated to meet your career goals'}
+    header={'Enrol for your choice course at 30% discount rate'}
     text={<>
-            <p>Search for the course that meets your need and start learning today.</p>
+            <p>Start learning today and pay as you increase your acess.</p>
+            <p>Follow the premium plan and access full content of the courses</p>
           </>}
     CTA={
       <div className='mt-4'>
               <button className='primary-btn bg-[var(--color-primary)] px-[18px] py-[14px] mr-[20px] rounded hover:bg-[var(--color-secondary)] duration-500 cursor-pointer'>
-                Get Started <i className='fa fa-long-arrow-alt-right'></i>
+                View Premium <i className='fa fa-long-arrow-alt-right'></i>
               </button>
               <button className='bg-[var(--color-white)] text-[var(--color-black)] px-[18px] py-[14px] mr-[20px] rounded hover:bg-[var(--color-secondary)] hover:text-[var(--color-white)] duration-500 cursor-pointer'>
-                View Courses <i className='fa fa-long-arrow-alt-right'></i>
+                View Free <i className='fa fa-long-arrow-alt-right'></i>
               </button>
-      </div>}
-      />
+      </div>
+    }
+    />
   )
 }
 
-export default Courses
+export default Pricing
