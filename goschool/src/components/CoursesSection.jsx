@@ -25,10 +25,10 @@ const CoursesSection = () => {
         title="Explore Popular Online Courses"
         />
         
-        <div className="grid grid-cols-2 lg:grid-cols-4 w-full pt-14 text-left rounded " >
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 w-full pt-14 text-left rounded " >
           
           {NewList.map((data) => (
-            <div key={data.id} className='p-2 bg-white shadow-md hover:shadow-xl duration-300'>
+            <div key={data.id} className='p-2 bg-white shadow-md hover:shadow-xl duration-500'>
             <div className='w-full h-32 overflow-hidden rounded'><img src={data.dcover} alt="label" /></div>
             <div className='font-bold text-lg leading-6 mt-2'>{data.coursesName}</div>
             <small className='small font-semibold'>{data.name}</small>

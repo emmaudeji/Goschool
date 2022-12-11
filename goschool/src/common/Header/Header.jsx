@@ -1,50 +1,43 @@
 import { useState } from "react"
-import { Link } from "react-router-dom"
+import { NavLink } from "react-router-dom"
 import Head from "./Head"
+import {navLinks} from "../../Data/dummydata"
 import "./header.css"
 
 const Header = () => {
   const [click, setClick] = useState(false)
+  const [active, setActive] = useState("Home")
 
   return (
     <>
       <Head />
         <nav className='bg-[var(--color-bg-transparent)] h-12 flex w-full px-6  sm:px-16  lg:px-36 xl:px-48  justify-between items-center navbar z-20 '>
 
-          <h2 className="">Goschool</h2>
+          <NavLink to={'/'} className="text-xl font-bold hover:text-[var(--color-primary)] duration-300" >Goschool</NavLink>
+          
           <ul className= { click ? "absolute top-24 left-0 bg-[var(--color-primary)] text-[var(--color-white)] w-[100vw] flex justify-center  text-center md:hidden py-6 leading-8" : "md:flex hidden justify-end"} onClick={() => setClick(false)}>
-            <div className="md:flex">
-              <li>
-              <Link class to='/'>Home</Link>
-            </li>
-            <li>
-              <Link to='/courses'>Courses</Link>
-            </li>
-            <li>
-              <Link to='/about'>About</Link>
-            </li>
-            <li>
-              <Link to='/instructors'>Instructors</Link>
-            </li>
-            <li>
-              <Link to='/pricing'>Pricing</Link>
-            </li>
-            <li>
-              <Link to='/journals'>Journal</Link>
-            </li>
-            <li>
-              <Link to='/contact'>Contact</Link>
-            </li>
+
+            <div className="md:flex text-[14px] ">
+              {
+                navLinks.map(({id, link, title}) => (
+                  <li key={id}
+                      onClick={() => setActive(title)}>
+                    <NavLink className={`hover:font-bold duration-500 ${active === title ? 'font-bold ': null} 
+                    ${id === navLinks.length - 1 ? "md:pr-0" : "lg:pr-4"}`}
+                    to={link}>{title}</NavLink>
+                  </li>
+                ))
+              }
             </div>
             
           </ul>
 
           <div className="flex items-center ">
             <div className='start'>
-              <div className='flex rounded mr-2 md:mr-0 px-4 h-10 text-[var(--color-white)] bg-[var(--color-primary)] hover:bg-[var(--color-secondary)] items-center duration-300'>Register              </div>
+              <div className='flex rounded mr-2 md:mr-0 px-4 h-10 text-[var(--color-white)] bg-[var(--color-primary)] hover:bg-[var(--color-secondary)] items-center duration-300 cursor-pointer'>Register              </div>
             </div>
-            <div className=' md:hidden' onClick={() => setClick(!click)}>
-                {click ? <i className='fa fa-times z-20'> </i> : <i className='fa fa-bars '></i>}
+            <div className=' md:hidden cursor-pointer ' onClick={() => setClick(!click)}>
+                {click ? <i className='fa fa-times z-20 hover:text-xl duration-300'> </i> : <i className='fa fa-bars hover:text-xl duration-300'></i>}
             </div>
           </div>
         </nav>

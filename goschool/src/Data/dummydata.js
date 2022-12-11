@@ -35,6 +35,44 @@ import {
   user3,
 } from "../assets";
 
+export const navLinks = [
+  {
+    id: 0,
+    link: "/",
+    title: "Home",
+  },
+  {
+    id: 1,
+    link: "/courses",
+    title: "Courses",
+  },
+  {
+    id: 2,
+    link: "/about",
+    title: "About",
+  },
+  {
+    id: 3,
+    link: "/instructors",
+    title: "Instructors",
+  },
+  {
+    id: 4,
+    link: "/pricing",
+    title: "Pricing",
+  },
+  {
+    id: 5,
+    link: "/journal",
+    title: "Journal",
+  },
+  {
+    id: 6,
+    link: "/contact",
+    title: "Contact",
+  },
+];
+
 export const homeAbout = [
   {
     id: 1,

@@ -89,6 +89,10 @@ const Footer = () => {
 
       </div>
       
+        <div className="h-4 br-zinc-600 w-full">{" "}</div>
+        <div className="flex justify-center text-center text-sm py-4 border-y-4 border-zinc-500">
+        Copywrite (05-12-2022) Gogrene
+      </div>
     </div>
   )
 }

@@ -11,9 +11,9 @@ const AllCourses = () => {
       title={"Browse Through All Courses"}
       />
 
-      <div className="grid grid-cols-2  xl:grid-cols-5 w-full pt-14 text-center rounded " >
+      <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 w-full pt-14 text-center rounded " >
         {online.map((data) => (
-          <div className='text-center p-6 bg-white hover:bg-[var(--color-primary)] hover:text-white shadow-md rounded overflow-hidden'>
+          <div className='text-center p-6 bg-white hover:bg-[var(--color-primary)] hover:text-white shadow-md rounded overflow-hidden duration-500'>
           <div className='text-[var(--color-primary)] '>
              <img src={data.cover} />
               <img src={data.hoverCover} alt='' className='show' />

@@ -7,8 +7,8 @@ const Newsletter = () => {
      <div className='w-full sm:flex justify-between items-center px-6  sm:px-16  lg:px-36 xl:px-48  mx-auto py-14 bg-[var(--color-primary)] ' >
    
         <div className='text-white'>
-          <h1 className='text-4xl font-bold'>Let's keep you updated</h1>
-          <h3>Stay tune and get the latest update, discount rates and freebies</h3>
+          <h1 className='text-4xl font-bold'>Join our newsletter</h1>
+          <h3>Stay instant updates, discount rates, news and freebies</h3>
         </div>
 
         <form 
