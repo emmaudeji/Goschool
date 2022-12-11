@@ -2,7 +2,7 @@ import { useState } from "react"
 import { NavLink } from "react-router-dom"
 import Head from "./Head"
 import {navLinks} from "../../Data/dummydata"
-import "./header.css"
+
 
 const Header = () => {
   const [click, setClick] = useState(false)
