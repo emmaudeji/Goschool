@@ -1,8 +1,9 @@
-import { Hero } from "../components"
+import { Hero, AboutSection } from "../components"
 import bg3 from '../assets/bgwhite11.png'
 
 const About = () => {
   return (
+    <>
     <Hero
     backgroundImage={bg3}
     title='About Us'
@@ -22,7 +23,9 @@ const About = () => {
       </div>
     }
     />
-    
+
+    <AboutSection/>
+    </>
   )
 }
 

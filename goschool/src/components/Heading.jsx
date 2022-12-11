@@ -1,9 +1,9 @@
 
 const Heading = ({ subtitle, title }) => {
   return (
-      <div id='heading'>
-        <h3>{subtitle} </h3>
-        <h1>{title} </h1>
+      <div >
+        <h3 className="font-[600] leading-8 uppercase text-[var(--color-primary)]">{subtitle} </h3>
+        <h1 className="text-[45px] my-[10px] font-[600] leading-10 capitalize">{title} </h1>
       </div>
   )
 }

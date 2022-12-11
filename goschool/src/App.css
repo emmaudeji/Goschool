@@ -65,59 +65,9 @@ body {
   color: var(--color-white);
 }
 
-/* .section-row {
-  width: 50%;
-} */
-
-/* button {
-  padding: 15px 20px;
-  background-color: var(--color-white);
-  color: var(--color-primary);
-  font-weight: 600;
-  border: none;
-  margin: 30px 10px 0 0;
-  border-radius: 3px;
-  cursor: pointer;
-  box-shadow: 0 24px 36px -11px rgb(0 0 0 / 9%);
-  transition: 0.5s;
-} */
-
-button i {
-  margin-left: 20px;
-}
-/* 
-button:hover {
-  box-shadow: none;
-  background-color: var(--color-secondary);
-}
-
-.primary-btn {
-  background-color: var(--color-primary);
-  color: var(--color-white);
-  cursor: pointer;
-} */
-
-
 
 /*------------global-----------*/
-#heading {
-  text-align: center;
-  padding: 40px 0;
-}
 
-#heading h3 {
-  font-weight: 600;
-  letter-spacing: 1px;
-  color: var(--color-primary);
-  text-transform: uppercase;
-}
-
-#heading h1 {
-  font-size: 45px;
-  margin: 20px 0;
-  font-weight: 600;
-  text-transform: capitalize;
-}
 
 p {
   line-height: 30px;
@@ -151,24 +101,7 @@ p {
   text-transform: uppercase;
 }
 
-
-
-.grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: 30px;
-}
-
-/* .flex {
-  display: flex;
-} */
-
-.grid2 {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 30px;
-}
-
+/* 
 .outline-btn {
   margin: 0;
   box-shadow: none;
@@ -212,6 +145,31 @@ p {
   }
 }
 
+/* ============= slider ========== */
+
+
+.slider {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  position: relative
+}
+
+.slider_container {
+  display: flex;
+  flex-direction: row;
+  width: 85vw;
+  overflow-x: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.slider_container::-webkit-scrollbar {
+  display: none;
+}
+
+
+
 
 /* ======= Hero =========== */
 .hero {
@@ -229,7 +187,7 @@ p {
   color: var(--color-white);
 }
 
-.hero #heading h3 {
+/* .hero #heading h3 {
   color: var(--color-white);
 }
 
@@ -239,7 +197,7 @@ p {
   padding: 0;
   line-height: normal;
   font: 700;
-}
+} */
 
 @media screen and (max-width: 768px) {
   /* .margin {
