@@ -26,7 +26,7 @@ export const Objects = () => {
   const handleSignup = event => {
     event.preventDefault();
     if (input.password === input.repassword) {
-      navigate('/login')
+      navigate('goschool/login')
       // alert(`You are successfully signed up ${input.username}`)
 
       // setInput({
@@ -41,7 +41,7 @@ export const Objects = () => {
   const handleLogin = event => {
     event.preventDefault();
     login(input.username)
-    navigate('/')
+    navigate('/goschool')
     alert(`You are successfully logged in ${input.username}`)
   }
 
@@ -60,14 +60,14 @@ export const Login = () => {
         
         <div className="flex w-full justify-between  text-center cursor-pointer">
           
-          <div className={`${location.pathname === "/signup" && "bg-blue-800 text-white"}  
+          <div className={`${location.pathname === "/goschool/signup" && "bg-blue-800 text-white"}  
           w-full py-4 rounded`}
-          onClick={() => navigate('/signup')}
+          onClick={() => navigate('/goschool/signup')}
           >Sign-up</div>
           
-          <div className={`${location.pathname === "/login" && "bg-blue-800 text-white"}  
+          <div className={`${location.pathname === "/goschool/login" && "bg-blue-800 text-white"}  
           w-full py-4 rounded`}
-          onClick={() => navigate('/login')}
+          onClick={() => navigate('/goschool/login')}
           >Login</div>
         </div>
 
@@ -96,7 +96,7 @@ export const Login = () => {
         
       </form>
 
-          <div className="p-4 ">Not registered? <span className="text-blue-900 hover:text-blue-500 duration-300 cursor-pointer" onClick={() => navigate('/signup')}>Sign-up</span>
+          <div className="p-4 ">Not registered? <span className="text-blue-900 hover:text-blue-500 duration-300 cursor-pointer" onClick={() => navigate('/goschool/signup')}>Sign-up</span>
           </div>
       </div>
     </div>
@@ -113,14 +113,14 @@ export const SignUp = () => {
         
         {/* header */}
         <div className="flex w-full justify-between  text-center cursor-pointer">
-          <div className={`${location.pathname === "/signup" && "bg-blue-800 text-white"}  
+          <div className={`${location.pathname === "/goschool/signup" && "bg-blue-800 text-white"}  
           w-full py-4 rounded`}
-          onClick={() => navigate('/signup')}
+          onClick={() => navigate('/goschool/signup')}
           >Sign-up</div>
           
-          <div className={`${location.pathname === "/login" && "bg-blue-800 text-white"}  
+          <div className={`${location.pathname === "/goschool/login" && "bg-blue-800 text-white"}  
           w-full py-4 rounded`}
-          onClick={() => navigate('/login')}
+          onClick={() => navigate('/goschool/login')}
           >Login</div>
       </div>
 
@@ -161,7 +161,7 @@ export const SignUp = () => {
           </div>
       </form>
 
-          <div className="p-4 ">Already registered? <span className="text-blue-900 hover:text-blue-500 duration-300 cursor-pointer" onClick={() => navigate('/login')}>Sign in</span>
+          <div className="p-4 ">Already registered? <span className="text-blue-900 hover:text-blue-500 duration-300 cursor-pointer" onClick={() => navigate('/goschool/login')}>Sign in</span>
           </div>
       {/* option */}
           

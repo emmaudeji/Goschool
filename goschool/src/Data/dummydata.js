@@ -38,37 +38,37 @@ import {
 export const navLinks = [
   {
     id: 0,
-    link: "/",
+    link: "goschool",
     title: "Home",
   },
   {
     id: 1,
-    link: "/courses",
+    link: "goschool/courses",
     title: "Courses",
   },
   {
     id: 2,
-    link: "/about",
+    link: "goschool/about",
     title: "About",
   },
   {
     id: 3,
-    link: "/instructors",
+    link: "goschool/instructors",
     title: "Instructors",
   },
   {
     id: 4,
-    link: "/pricing",
+    link: "goschool/pricing",
     title: "Pricing",
   },
   {
     id: 5,
-    link: "/journal",
+    link: "goschool/journals",
     title: "Journal",
   },
   {
     id: 6,
-    link: "/contact",
+    link: "goschool/contact",
     title: "Contact",
   },
 ];

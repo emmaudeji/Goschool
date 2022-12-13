@@ -23,17 +23,17 @@ function App() {
     <Authprovider>
       <Header />
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="about" element={<About />} />
-        <Route path="journals" element={<Journals />} />
-        <Route path="courses" element={<Courses />} />
-        <Route path="contact" element={<Contact />} />
-        <Route path="instructors" element={<Instructors />} />
+        <Route path="goschool" element={<Home />} />
+        <Route path="goschool/about" element={<About />} />
+        <Route path="goschool/journals" element={<Journals />} />
+        <Route path="goschool/courses" element={<Courses />} />
+        <Route path="goschool/contact" element={<Contact />} />
+        <Route path="goschool/instructors" element={<Instructors />} />
         <Route path={"*"} element={<NotFound />} />
-        <Route path="pricing" element={<Pricing />} />
-        <Route path="profile" element={<Profile />} />
-        <Route path="login" element={<Login />} />
-        <Route path="signup" element={<SignUp />} />
+        <Route path="goschool/pricing" element={<Pricing />} />
+        <Route path="goschool/profile" element={<Profile />} />
+        <Route path="goschool/login" element={<Login />} />
+        <Route path="goschool/signup" element={<SignUp />} />
       </Routes>
       <Footer />
     </Authprovider>

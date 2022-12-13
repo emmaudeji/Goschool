@@ -13,7 +13,7 @@ const Authprovider = ({children}) => {
 
   const logout = () => {
     setUsername(null)
-    navigate('/')
+    navigate('goschool')
   }
 
   return (

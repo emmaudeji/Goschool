@@ -16,7 +16,7 @@ const Header = () => {
       <Head />
         <nav className='bg-[var(--color-bg-transparent)] h-12 flex w-full px-6  sm:px-16  lg:px-36 xl:px-48  justify-between items-center navbar z-20 '>
 
-          <NavLink to={'/'} className="text-xl font-bold hover:text-[var(--color-primary)] duration-300" >Goschool</NavLink>
+          <NavLink to={'goschool'} className="text-xl font-bold hover:text-[var(--color-primary)] duration-300" >Goschool</NavLink>
           
           <ul className= { click ? "flex-1 absolute top-24 left-0 bg-[var(--color-primary)] text-[var(--color-white)] w-[100vw] flex justify-between  text-center md:hidden py-6 leading-8" : "md:flex hidden justify-end"} onClick={() => setClick(false)}>
 
@@ -38,12 +38,12 @@ const Header = () => {
           <div className="flex items-center ">
             <div className='start'>
               <div className='flex rounded mr-2 md:mr-0 px-4 h-10 text-[var(--color-white)] bg-[var(--color-primary)] hover:bg-[var(--color-secondary)] items-center duration-300 cursor-pointer'
-              onClick={() => navigate('/signup')}
+              onClick={() => navigate('/goschool/signup')}
               >{username ? username : 'Register' }      
               </div>
 
             </div>
-            {username ? <div className="pl-4 cursor-pointer hover:font-semibold duration-300" onClick={() => logout()}>Logout</div> : null }
+            {username ? <div className="pr-2  sm:pr-0 cursor-pointer hover:font-semibold duration-300" onClick={() => logout()}>Logout</div> : null }
             <div className=' md:hidden cursor-pointer ' onClick={() => setClick(!click)}>
                 {click ? <i className='fa fa-times z-20 hover:text-xl duration-300'> </i> : <i className='fa fa-bars hover:text-xl duration-300'></i>}
             </div>
