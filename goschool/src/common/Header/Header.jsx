@@ -1,10 +1,11 @@
 import { useState } from "react"
-import { NavLink } from "react-router-dom"
+import { NavLink, useNavigate } from "react-router-dom"
 import Head from "./Head"
 import {navLinks} from "../../Data/dummydata"
 
 
 const Header = () => {
+  const navigate = useNavigate();
   const [click, setClick] = useState(false)
   const [active, setActive] = useState("Home")
 
@@ -15,7 +16,7 @@ const Header = () => {
 
           <NavLink to={'/'} className="text-xl font-bold hover:text-[var(--color-primary)] duration-300" >Goschool</NavLink>
           
-          <ul className= { click ? "absolute top-24 left-0 bg-[var(--color-primary)] text-[var(--color-white)] w-[100vw] flex justify-center  text-center md:hidden py-6 leading-8" : "md:flex hidden justify-end"} onClick={() => setClick(false)}>
+          <ul className= { click ? "flex-1 absolute top-24 left-0 bg-[var(--color-primary)] text-[var(--color-white)] w-[100vw] flex justify-between  text-center md:hidden py-6 leading-8" : "md:flex hidden justify-end"} onClick={() => setClick(false)}>
 
             <div className="md:flex text-[14px] ">
               {
@@ -23,7 +24,7 @@ const Header = () => {
                   <li key={id}
                       onClick={() => setActive(title)}>
                     <NavLink className={`hover:font-bold duration-500 ${active === title ? 'font-bold ': null} 
-                    ${id === navLinks.length - 1 ? "md:pr-0" : "lg:pr-4"}`}
+                    ${id === navLinks.length - 1 ? "md:pr-0" : "md:pr-2 lg:pr-4"}`}
                     to={link}>{title}</NavLink>
                   </li>
                 ))
@@ -34,7 +35,10 @@ const Header = () => {
 
           <div className="flex items-center ">
             <div className='start'>
-              <div className='flex rounded mr-2 md:mr-0 px-4 h-10 text-[var(--color-white)] bg-[var(--color-primary)] hover:bg-[var(--color-secondary)] items-center duration-300 cursor-pointer'>Register              </div>
+              <div className='flex rounded mr-2 md:mr-0 px-4 h-10 text-[var(--color-white)] bg-[var(--color-primary)] hover:bg-[var(--color-secondary)] items-center duration-300 cursor-pointer'
+              onClick={() => navigate('/signup')}
+              >Register       
+              </div>
             </div>
             <div className=' md:hidden cursor-pointer ' onClick={() => setClick(!click)}>
                 {click ? <i className='fa fa-times z-20 hover:text-xl duration-300'> </i> : <i className='fa fa-bars hover:text-xl duration-300'></i>}

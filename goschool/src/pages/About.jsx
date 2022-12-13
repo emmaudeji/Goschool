@@ -9,7 +9,7 @@ const About = () => {
     title='About Us'
     header={'Best Learning experience at your comfort'}
     text={<>
-            <p>Learn at your pace and master the skill of choice.</p>
+            <p>Learn at your pace and master the skill of your choice.</p>
             <p>Courses that meet your career goals.</p>
           </>}
     CTA={

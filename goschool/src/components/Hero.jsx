@@ -10,7 +10,7 @@ const Hero = (props) => {
             <Heading subtitle={props.title} title={props.header}/>
             <div className='text-[30px] font-semibold'>
               {props.text}
-              </div>
+            </div>
             {props.CTA}
           </div>
         </div>

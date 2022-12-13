@@ -11,6 +11,9 @@ import {
   Instructors,
   NotFound,
   Pricing,
+  Login,
+  SignUp,
+  Profile,
 } from "./pages";
 
 function App() {
@@ -26,6 +29,9 @@ function App() {
         <Route path="instructors" element={<Instructors />} />
         <Route path={"*"} element={<NotFound />} />
         <Route path="pricing" element={<Pricing />} />
+        <Route path="profile" element={<Profile />} />
+        <Route path="login" element={<Login />} />
+        <Route path="signup" element={<SignUp />} />
       </Routes>
       <Footer />
     </div>
