@@ -20,9 +20,9 @@ const Footer = () => {
           </div>
         </div>
         
-        <div className="grid grid-cols-4">
+        <div className="grid grid-cols-2 sm:grid-cols-4">
           <div>
-            <h3 className="font-bold text-lg pb-2">Explore</h3>
+            <h3 className="font-semibold text-lg pb-2">Explore</h3>
             <ul>
               <li>About Us</li>
               <li>Services</li>
@@ -32,7 +32,7 @@ const Footer = () => {
             </ul>
           </div>
           <div>
-            <h3 className="font-bold text-lg pb-2">Quick Links</h3>
+            <h3 className="font-semibold text-lg pb-2">Quick Links</h3>
             <ul>
               <li>Contact Us</li>
               <li>Pricing</li>
@@ -42,9 +42,9 @@ const Footer = () => {
             </ul>
           </div>
 
-          <div className="col-span-2"><h3 className="font-bold text-lg pb-2">Recent Post</h3>
-
-            <div className="divide-y divide-slate-600">
+          <div className="col-span-2">
+            <h3 className="font-semibold text-lg pb-2 pt-4 sm:pt-0">Recent Post</h3>
+            <div className="divide-y divide-slate-600 text-[12px]">
               {blog.slice(0, 3).map((data) => (
               <div className='flex pb-4 '>
                 <div className='mr-2 w-24 rounded overflow-hidden'>
@@ -59,7 +59,7 @@ const Footer = () => {
                     <i className='fa fa-user pr-2 text-[var(--color-primary)]'></i>
                     <label htmlFor=''>{data.type}</label>
                   </span>
-                  <h4 className="text-lg">{data.title.slice(0, 40)}...</h4>
+                  <h4 className="text-lg text-sm">{data.title}</h4>
                 </div>
               </div>
             ))}
@@ -70,7 +70,7 @@ const Footer = () => {
 
 
         <div className='lg:w-[25%] '>
-            <h3 className="font-bold text-lg pb-2">Have a Questions?</h3>
+            <h3 className="font-semibold text-lg pb-2">Have Questions?</h3>
             <ul>
               <li>
                 <i className='fa fa-map pr-2 text-[var(--color-primary)]'></i>

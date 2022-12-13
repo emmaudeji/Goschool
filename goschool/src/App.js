@@ -2,6 +2,8 @@ import "./App.css";
 import { Routes, Route } from "react-router-dom";
 import Header from "./common/Header/Header";
 import Footer from "./common/Footer";
+import Authprovider from "./common/auth";
+
 import {
   Home,
   About,
@@ -18,7 +20,7 @@ import {
 
 function App() {
   return (
-    <div className="">
+    <Authprovider>
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
@@ -34,7 +36,7 @@ function App() {
         <Route path="signup" element={<SignUp />} />
       </Routes>
       <Footer />
-    </div>
+    </Authprovider>
   );
 }
 
